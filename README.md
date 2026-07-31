@@ -11,7 +11,7 @@ Hosts a simple HTML website on an EC2 instance inside a custom VPC. Images are s
 - **Security Group** – firewall rules (HTTP open, SSH restricted to my IP)
 - **IAM Role** – lets EC2 access S3 securely
 - **S3** – stores website images
-- **Route 53** – (optional) custom domain
+
 
 ## How I built it
 1. Created a VPC with a public subnet + Internet Gateway
@@ -19,7 +19,7 @@ Hosts a simple HTML website on an EC2 instance inside a custom VPC. Images are s
 3. Created an IAM Role with S3 read access
 4. Launched an EC2 instance and installed Apache via a startup script
 5. Uploaded images to S3 and pulled them into the server
-6. (Optional) Connected a domain using Route 53
+
 
 ## What I learned
 - How VPC networking (subnets, IGW, routing) works
@@ -28,4 +28,4 @@ Hosts a simple HTML website on an EC2 instance inside a custom VPC. Images are s
 - Basics of automating server setup with a startup script
 
 ## Tech Stack
-`AWS` `EC2` `VPC` `S3` `IAM` `Route 53`
+`AWS` `EC2` `VPC` `S3` `IAM` 
